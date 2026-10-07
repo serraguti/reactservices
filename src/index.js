@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ComponentServiceCustomers from './components/ComponentServiceCustomers';
+import ComponentServiceSuppliers from './components/ComponentServiceSuppliers';
+import EmpleadosDepartamentos from './components/EmpleadosDepartamentos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <ComponentServiceCustomers/>
+    <EmpleadosDepartamentos/>
 );
 
 // If you want to start measuring performance in your app, pass a function

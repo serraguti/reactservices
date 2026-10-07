@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Global from '../Global';
 
 export default class ComponentServiceCustomers extends Component {
     state = {
         customers: []
     }
-    url = "https://services.odata.org/V4/Northwind/Northwind.svc/Customers";
+
     loadCustomers = () => {
         console.log("Antes del servicio");
-        axios.get(this.url).then((response) => {
+        let request = "Customers";
+        axios.get(Global.urlNorthwind + request).then((response) => {
             console.log("Leyendo servicio");
             //LOS DATOS DEL SERVICIO CON AXIOS SIEMPRE VIENEN 
             //DENTRO DE LA PROPIEDAD data.
