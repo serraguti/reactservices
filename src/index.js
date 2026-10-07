@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import ComponentServiceCustomers from './components/ComponentServiceCustomers';
 import ComponentServiceSuppliers from './components/ComponentServiceSuppliers';
 import EmpleadosDepartamentos from './components/EmpleadosDepartamentos';
+import EmpleadosOficios from './components/EmpleadosOficios';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
